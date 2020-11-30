@@ -1,7 +1,6 @@
 .tiles {
     display: flex;
     .tile {
-        $t: &;
         position: relative;
         display: flex;
         flex-direction: column;

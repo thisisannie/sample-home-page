@@ -1,0 +1,49 @@
+.card {
+    display: inline-block;
+    padding: 0 $spacer-md $spacer-md;
+    color: inherit;
+    &__image-container {
+        position: relative;
+        margin-bottom: $spacer-sm;
+        border-radius: 50%;
+        padding-top: 100%;
+        box-shadow: 0 0 0 1.5px $grey;
+        overflow: hidden;
+        transition: $transition;
+        .card__image {
+            position: absolute;
+            top: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            box-shadow: inset 0 0 0 5px white;
+            background-size: cover;
+            background-position: center center;
+            transition: $transition;
+        }
+    }
+    &__read-more {
+        display: inline-block;
+        color: $blue;
+        text-transform: lowercase;
+        background: url(../images/icons/arrow.png) no-repeat left -3px;
+        padding-left: 30px;
+        transform: translateX(-3px);
+        transition: $transition;
+    }
+    &:hover,&:active,&:focus {
+        text-decoration: none!important;
+        color: inherit;
+        .card__image {
+            box-shadow: inset 0 0 0 0 white;
+        }
+        .card__image-container {
+            box-shadow: 0 0 0 0 $grey;
+        }
+        .card__read-more {
+            transform: translateX(0);
+        }
+    }
+    
+}
