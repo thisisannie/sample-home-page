@@ -1,5 +1,5 @@
 header {
-    position: relative;
+    position: absolute;
     width: 100%;
     @media (min-width: 992px) {
         position: absolute;
@@ -23,6 +23,7 @@ header {
         display: inline-block;
         width: 100%;
         left: 0;
+        z-index: 44;
         @media (min-width: 992px) {
             right: 0;
             bottom: 0;
@@ -65,7 +66,7 @@ header {
                 height: 100vh;
                 max-height: 100vh;
                 transform: scaleY(1);
-                background-color: #e3e3e3;
+                background-color: rgba(white, 0.6);
             }
             @media (min-width: 992px) {
                 position: initial;

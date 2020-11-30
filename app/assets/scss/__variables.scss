@@ -14,3 +14,17 @@ $header-spacer-v: 25px;
 $header-spacer-h: 30px;
 
 $transition: all 0.3s ease;
+
+// Typography
+$fs-enlarge: 1.2;
+
+$fs-h1: 3rem;
+$fs-h1-lg: 3rem * $fs-enlarge; // 3.6
+$fs-h2: 2.83rem;
+$fs-h2-lg: 2.83rem * $fs-enlarge; // 3.4
+$fs-h3: 1.8rem;
+$fs-h3-lg: 1.8rem * $fs-enlarge; // 2.2
+$fs-h4: 1.7rem;
+$fs-h4-lg: 1.7rem * $fs-enlarge; // 2.0
+$fs-p: 0.83rem;
+$fs-p-lg: 0.83rem * $fs-enlarge; // 1.0

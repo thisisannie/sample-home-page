@@ -1,0 +1,65 @@
+// Typography
+body {
+    color: black;
+    font-size: $fs-p;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+h1,h2,h3,h4 {
+    line-height: 1.2;
+}
+h1 {
+    font-size: $fs-h1;
+    font-weight: 400;
+    @media (min-width: 992px) {
+        font-size: $fs-h1-lg;
+    }
+}
+h2 {
+    font-size: $fs-h2;
+    font-weight: 400;
+    @media (min-width: 992px) {
+        font-size: $fs-h2-lg;
+    }
+}
+h3 {
+    font-size: $fs-h3;
+    font-weight: 300;
+    @media (min-width: 992px) {
+        font-size: $fs-h3-lg;
+    }
+}
+h4 {
+    font-size: $fs-h4;
+    font-weight: 300;
+    @media (min-width: 992px) {
+        font-size: $fs-h4-lg;
+    }
+}
+p {
+    font-size: $fs-p;
+    @media (min-width: 992px) {
+        font-size: $fs-p-lg;
+    }
+}
+
+// Button
+button, .button {
+    border: none;
+    border-radius: 5px;
+    background-color: lighten($blue, 15%);
+    padding: 10px 25px;
+    text-transform: uppercase;
+    color: white;
+    transition: $transition;
+    &:active, &:hover,&:focus {
+        background-color: $blue;
+    }
+}
+
+// Spacing
+.spacer-md {
+    margin-top: $spacer-md;
+}
