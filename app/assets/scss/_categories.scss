@@ -16,13 +16,13 @@
         }
     }
     &-1 {
-        background-color: lighten($grey, 10%);
+        background-color: lighten($grey, 30%);
         h3 {
             background-color: $grey;
         }
     }
     &-2 {
-        background-color: lighten(desaturate($lobster, 40%), 40%);
+        background-color: lighten(desaturate($lobster, 40%), 35%);
         h3 {
             background-color: $lobster;
         }
@@ -40,7 +40,7 @@
         }
     }
     &-5 {
-        background-color: lighten(desaturate($ocean, 80%), 60%);
+        background-color: lighten(desaturate($ocean, 80%), 65%);
         h3 {
             background-color: $ocean;
         }
