@@ -8,12 +8,14 @@ $ocean: #038072;
 $rust: #d0922b;
 
 $spacer-xs: 8px;
-$spacer-sm: 15px;
-$spacer-md: 36px;
+$spacer-sm: 20px;
+$spacer-md: 35px;
+$spacer-lg: 100px;
 $header-spacer-v: 25px;
 $header-spacer-h: 30px;
 
 $transition: all 0.3s ease;
+$transition-slow: all 0.6s ease;
 
 // Typography
 $fs-enlarge: 1.2;
@@ -22,7 +24,7 @@ $fs-h1: 3rem;
 $fs-h1-lg: $fs-h1 * $fs-enlarge; // 3.6
 $fs-h2: 2.83rem;
 $fs-h2-lg: $fs-h2 * $fs-enlarge; // 3.4
-$fs-h3: 1.8rem;
+$fs-h3: 2.1rem;
 $fs-h3-lg: $fs-h3 * $fs-enlarge; // 2.2
 $fs-h4: 1.7rem;
 $fs-h4-lg: $fs-h4 * $fs-enlarge; // 2.0

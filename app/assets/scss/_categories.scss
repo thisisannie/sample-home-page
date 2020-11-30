@@ -1,0 +1,54 @@
+.category {
+    h3 {
+        display: inline-block;
+        margin: 0;
+        margin-left: -2000px;
+        padding-left: 2000px;
+        padding-top: $spacer-sm;
+        padding-right: $spacer-sm;
+        padding-bottom: $spacer-sm + 5px;
+        color: white;
+        transition: $transition-slow;
+        &:hover {
+            margin-right: -2000px;
+            padding-right: 2000px;
+            cursor: pointer;
+        }
+    }
+    &-1 {
+        background-color: lighten($grey, 10%);
+        h3 {
+            background-color: $grey;
+        }
+    }
+    &-2 {
+        background-color: lighten(desaturate($lobster, 40%), 40%);
+        h3 {
+            background-color: $lobster;
+        }
+    }
+    &-3 {
+        background-color: lighten(desaturate($lime, 50%), 40%);
+        h3 {
+            background-color: $lime;
+        }
+    }
+    &-4 {
+        background-color: lighten(desaturate($blue, 50%), 40%);
+        h3 {
+            background-color: $blue;
+        }
+    }
+    &-5 {
+        background-color: lighten(desaturate($ocean, 80%), 60%);
+        h3 {
+            background-color: $ocean;
+        }
+    }
+    &-6 {
+        background-color: lighten(desaturate($rust, 50%), 40%);
+        h3 {
+            background-color: $rust;
+        }
+    }
+}

@@ -9,6 +9,7 @@
 body {
     color: black;
     font-size: $fs-p;
+    overflow-x: hidden;
 }
 img {
     height: auto;
@@ -33,14 +34,14 @@ h2 {
 }
 h3 {
     font-size: $fs-h3;
-    font-weight: 300;
+    font-weight: 400;
     @media (min-width: 992px) {
         font-size: $fs-h3-lg;
     }
 }
 h4 {
     font-size: $fs-h4;
-    font-weight: 500;
+    font-weight: 400;
     @media (min-width: 992px) {
         font-size: $fs-h4-lg;
     }
@@ -83,7 +84,7 @@ button, .button {
 
 // Section
 .section {
-    padding: 100px 0;
+    padding: $spacer-lg 0;
     &+.section {
         padding-top: 0;
     }
