@@ -1,3 +1,10 @@
+// Layout
+@media (min-width: 1600px){
+    .container {
+        max-width: 1500px;
+    }
+}
+
 // Typography
 body {
     color: black;
@@ -33,15 +40,25 @@ h3 {
 }
 h4 {
     font-size: $fs-h4;
-    font-weight: 300;
+    font-weight: 500;
     @media (min-width: 992px) {
         font-size: $fs-h4-lg;
     }
 }
-p {
+p, li {
     font-size: $fs-p;
+    color: #222222;
     @media (min-width: 992px) {
         font-size: $fs-p-lg;
+    }
+}
+.list-links {
+    padding: 0;
+    li {
+        display: block;
+        list-style: none;
+        background: url('../images/icons/arrow.png') no-repeat left 1px;
+        padding-left: 30px;
     }
 }
 
@@ -62,4 +79,12 @@ button, .button {
 // Spacing
 .spacer-md {
     margin-top: $spacer-md;
+}
+
+// Section
+.section {
+    padding: 100px 0;
+    &+.section {
+        padding-top: 0;
+    }
 }
