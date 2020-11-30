@@ -19,15 +19,19 @@
         @media (min-width: 992px) {
             &__content {
                 opacity: 0;
-            }
-            
+            }            
         }
         &__content {
             position: relative;
             padding: $spacer-xl;
-            background-color: $lobster;
             transition: $transition;
+            background-color: rgba(0,0,0,0.5);
             color: white;
+            text-shadow: 0 0 15px black;
+            @media (min-width: 992px) {
+                background-color: $lobster;
+                text-shadow: none;           
+            }
             .date {
                 color: rgba(white, 0.7);
             }
