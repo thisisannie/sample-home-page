@@ -30,11 +30,12 @@ header {
         }
         
         #nav__toggle {
-            position: relative;
-            display: flex;
-            margin: 10px 15px;
-            justify-content: center;
-            align-items: center;
+            position: absolute;
+            right: 0;
+            margin: 11px 15px;
+            height: 30px;
+            width: 30px;
+            display: block; 
             &:before {
                 content: "";
                 position: absolute;
@@ -66,7 +67,7 @@ header {
                 height: 100vh;
                 max-height: 100vh;
                 transform: scaleY(1);
-                background-color: rgba(white, 0.6);
+                background-color: rgba(white, 0.9);
             }
             @media (min-width: 992px) {
                 position: initial;
