@@ -1,0 +1,37 @@
+.tiles {
+    display: flex;
+    .tile {
+        $t: &;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        overflow: hidden;
+        &:hover,&:active,&:focus {
+            cursor: pointer;
+            .tile__content {
+                opacity: 1;
+            }
+        }
+        @media (min-width: 992px) {
+            &__content {
+                opacity: 0;
+            }
+            
+        }
+        &__content {
+            position: relative;
+            padding: $spacer-xl;
+            background-color: $lobster;
+            transition: $transition;
+            color: white;
+            .date {
+                color: rgba(white, 0.7);
+            }
+        }
+    }
+}

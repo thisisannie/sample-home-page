@@ -7,12 +7,17 @@ $blue: #2185e3;
 $ocean: #038072;
 $rust: #d0922b;
 
+// Spacing
+
 $spacer-xs: 8px;
 $spacer-sm: 20px;
 $spacer-md: 35px;
-$spacer-lg: 100px;
+$spacer-lg: 70px;
+$spacer-xl: 100px;
 $header-spacer-v: 25px;
 $header-spacer-h: 30px;
+
+// Transitions
 
 $transition: all 0.3s ease;
 $transition-slow: all 0.6s ease;
@@ -26,7 +31,7 @@ $fs-h2: 2.83rem;
 $fs-h2-lg: $fs-h2 * $fs-enlarge; // 3.4
 $fs-h3: 2.1rem;
 $fs-h3-lg: $fs-h3 * $fs-enlarge; // 2.2
-$fs-h4: 1.7rem;
+$fs-h4: 1.2rem;
 $fs-h4-lg: $fs-h4 * $fs-enlarge; // 2.0
 $fs-p: 0.9rem;
 $fs-p-lg: $fs-p * $fs-enlarge; // 1.08
