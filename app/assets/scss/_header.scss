@@ -1,0 +1,39 @@
+header {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    .logo {
+        display: inline-block;
+        img {
+            height: 35px;
+            width: auto;
+            margin: 10px 15px;
+            @media (min-width: 768px) {
+                height: 65px;
+                margin: 25px 30px;
+            }
+        }
+    }
+    nav {
+        position: absolute;
+        display: inline-block;
+        margin: 10px 15px;
+        @media (min-width: 768px) {
+            right: 0;
+            bottom: 0;
+            margin: 25px 30px 22px;
+        }
+        .nav__item {
+            display: inline-block;
+            margin: $spacer-xs;
+            color: white;
+            font-size: 21px;
+            border-bottom: 3px transparent solid;
+            transition: $transition;
+            &:hover {
+                border-color: white;
+                color: white;
+            }
+        }
+    }
+}
