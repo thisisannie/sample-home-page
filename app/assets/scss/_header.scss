@@ -1,38 +1,98 @@
 header {
-    position: absolute;
+    position: relative;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    @media (min-width: 992px) {
+        position: absolute;
+    }
     .logo {
+        position: relative;
         display: inline-block;
+        z-index: 22;
         img {
             height: 35px;
             width: auto;
             margin: 10px 15px;
-            @media (min-width: 768px) {
+            @media (min-width: 992px) {
                 height: 65px;
-                margin: 25px 30px;
+                margin: $header-spacer-v $header-spacer-h;
             }
         }
     }
-    nav {
+    nav {        
         position: absolute;
         display: inline-block;
-        margin: 10px 15px;
-        @media (min-width: 768px) {
+        width: 100%;
+        left: 0;
+        @media (min-width: 992px) {
             right: 0;
             bottom: 0;
-            margin: 25px 30px 22px;
+        }
+        
+        #nav__toggle {
+            position: relative;
+            display: flex;
+            margin: 10px 15px;
+            justify-content: center;
+            align-items: center;
+            &:before {
+                content: "";
+                position: absolute;
+                right: 5px;
+                top: 5px;
+                width: 24px;
+                height: 5px;
+                background: white;
+                box-shadow: 0 9px 0 0 white, 0 18px 0 0 white;
+            }
+            @media (min-width: 992px) {
+                display: none;
+            }
+        }
+        #nav__content {
+            position: absolute;
+            top: 55px;
+            right: 0;
+            max-height: 0;
+            width: 100%;
+            padding: ($header-spacer-v - $spacer-xs) ($header-spacer-h - $spacer-xs);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            transform: scaleY(0);
+            transform-origin: top;
+            background-color: white;
+            z-index: 666666;
+            &.active {
+                height: 100vh;
+                max-height: 100vh;
+                transform: scaleY(1);
+                background-color: #e3e3e3;
+            }
+            @media (min-width: 992px) {
+                position: initial;
+                display: block;
+                max-height: initial;
+                max-width: initial;
+                transform: scaleY(1);
+                text-align: right;
+                background-color: initial;
+                color: white;
+            }
         }
         .nav__item {
-            display: inline-block;
+            display: block;
             margin: $spacer-xs;
-            color: white;
-            font-size: 21px;
+            color: black;
+            font-size: 17px;
             border-bottom: 3px transparent solid;
             transition: $transition;
-            &:hover {
-                border-color: white;
+            @media (min-width: 992px) {
+                font-size: 21px;
                 color: white;
+                display: inline-block;                
+                &:hover {
+                    border-color: white;
+                    color: white;
+                }
             }
         }
     }
